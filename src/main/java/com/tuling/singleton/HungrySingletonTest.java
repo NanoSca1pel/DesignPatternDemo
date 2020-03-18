@@ -1,7 +1,6 @@
-package main.java.com.lht.singleton;
+package main.java.com.tuling.singleton;
 
 import java.io.*;
-import java.lang.reflect.Constructor;
 
 /**
  * 饿汉式

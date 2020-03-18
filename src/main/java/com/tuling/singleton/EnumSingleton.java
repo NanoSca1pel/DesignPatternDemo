@@ -1,10 +1,9 @@
-package main.java.com.lht.singleton;
+package main.java.com.tuling.singleton;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.lang.reflect.Constructor;
 
 /**
  * 饿汉式 枚举

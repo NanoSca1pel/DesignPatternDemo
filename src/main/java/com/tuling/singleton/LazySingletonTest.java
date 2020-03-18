@@ -1,4 +1,4 @@
-package main.java.com.lht.singleton;
+package main.java.com.tuling.singleton;
 
 /**
  * 懒汉式
