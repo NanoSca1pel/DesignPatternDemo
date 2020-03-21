@@ -1,4 +1,4 @@
-package main.java.com.tuling.factoryMethod;
+package com.tuling.factoryMethod;
 
 /**
  * 工厂方法模式
