@@ -14,6 +14,18 @@ public class DependencyPass {
         OpenAndCloseSetter openAndCloseSetter = new OpenAndCloseSetter();
         openAndCloseSetter.setTv(()-> System.out.println("setter"));
         openAndCloseSetter.open();
+
+        System.out.println("--------------------");
+
+        new OpenAndClose().open(new Changhong());
+
+        new OpenAndCloseConstruct(new ChanghongConstruct()).open();
+
+        OpenAndCloseSetter openAndCloseSetter1 = new OpenAndCloseSetter();
+        openAndCloseSetter1.setTv(new ChanghongSetter());
+        openAndCloseSetter1.open();
+
+
     }
 }
 
@@ -28,6 +40,14 @@ interface IOpenAndClose{
 
 interface ITV {  //ITV接口
     void play();
+}
+
+class Changhong implements ITV {
+
+    @Override
+    public void play() {
+        System.out.println("长虹电视机打开");
+    }
 }
 
 //实现接口
@@ -49,6 +69,14 @@ interface IOpenAndCloseConstruct{
 
 interface ITVConstruct{
     void play();
+}
+
+class ChanghongConstruct implements ITVConstruct {
+
+    @Override
+    public void play() {
+        System.out.println("长虹电视机打开");
+    }
 }
 
 class OpenAndCloseConstruct implements IOpenAndCloseConstruct{
@@ -76,6 +104,14 @@ interface IOpenAndCloseSetter{
 
 interface ITVSetter{
     void play();
+}
+
+class ChanghongSetter implements ITVSetter {
+
+    @Override
+    public void play() {
+        System.out.println("长虹电视机打开");
+    }
 }
 
 class OpenAndCloseSetter implements IOpenAndCloseSetter{
